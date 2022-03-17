@@ -17,13 +17,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rQW-z1-ckI">
-                                <rect key="frame" x="142" y="662" width="131" height="31"/>
+                                <rect key="frame" x="142" y="662" width="131" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
+                                    <segment title="Third"/>
                                 </segments>
                                 <connections>
+                                    <action selector="segmentedAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="3Fj-Mu-MZO"/>
                                     <action selector="segmentedControlPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="19a-cj-W8L"/>
                                 </connections>
                             </segmentedControl>
@@ -39,6 +41,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="indextTwo" destination="rQW-z1-ckI" id="Ldo-bK-OaL"/>
+                        <outlet property="labelText" destination="CIW-h4-1ph" id="fna-W8-oe8"/>
                         <outlet property="myLabel" destination="CIW-h4-1ph" id="W6z-3y-g5H"/>
                         <outlet property="segmentedControl" destination="rQW-z1-ckI" id="zel-gr-A7L"/>
                     </connections>

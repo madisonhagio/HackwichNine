@@ -36,4 +36,31 @@ class ViewController: UIViewController {
     }
 }
 
+//problem set 1
+    
+    
+    @IBOutlet var indextTwo: UISegmentedControl!{
+        
+        indextTwo.text = "Woohoo, this makes sense now."
+    }
+    
+//problem set 2
+        
+    segmentedControl.selectedSegmentIndex = -1{
+        
+    }
+    @IBOutlet var labelText: UILabel!
+    
+    self.labelText.text = "Hello"
+    
+    @IBAction func segmentedAction(_ sender: Any) {
+        
+        labelText.text = "Text changed"
+    }
+    
+}
 
+   
+    
+    
+    
